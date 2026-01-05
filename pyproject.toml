@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "bentoml>=1.4.31",
+    "bentoml==1.4.28",
+    "ipykernel>=7.1.0",
     "matplotlib>=3.10.8",
+    "mlflow>=3.8.1",
     "numpy>=2.4.0",
     "optuna>=4.6.0",
     "pandas>=2.3.3",

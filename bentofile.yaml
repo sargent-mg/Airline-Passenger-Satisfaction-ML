@@ -1,0 +1,24 @@
+service: "service.py:AirlineService"
+
+python:
+  lock_packages: false
+  packages:
+    - pandas
+    - numpy
+    - scikit-learn
+    - xgboost
+    - bentoml
+    - mlflow
+
+docker:
+  base_image: "python:3.11-slim"
+  system_packages:
+    - libgomp1
+    - build-essential
+
+labels:
+  owner: "Adrián López Rendón"
+  project: "Airline-Passenger-Satisfaction-ML"
+
+models:
+  - airline_satisfaction_model:latest 
